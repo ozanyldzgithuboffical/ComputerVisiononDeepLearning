@@ -1,4 +1,4 @@
-# ComputerVisiononDeepLearning
+# Computer Vision on Deep Learning
 - This repo contains the basis of the Computer Vision applied with Deep Learning Models especially with Convolutional Deep Learning (CNN)
 
 ## Contents
