@@ -8,7 +8,6 @@
     - 2.2 **Haar-like Features**
     - 2.3 **Integral Images**
     - 2.4 **Training Classifiers**
-    - 2.5 **Cascaeding**
   - 3. **Object Detection**
     - 3.1 **Single Shot Multibox Detector (SSD)**
     - 3.2 **Preceding Object Positions**
@@ -31,13 +30,26 @@
 
 - **2.2 Haar-Like Features**
 - Haar is Hungarian mathmetician and he has found the features can be used to detect important features in an image.
-- Basic Haar-like features are **edge,linear,four regtangle haar-like features.
+- Basic Haar-like features are **edge,linear,four regtangle haar-like features**.
 - In face detection,in order to detect the object as a face we need to determine human's nose,eyes,lip etc.
 - For instance when we convert to RGB frontal face image into a gray scale image.We can see that some parts are bright and some of them is black.For lip of a human we can say that it has a **linear haar-like feature**.
 - We need to make sure that it is a correct haar-feature or not.Because of this,generally we determine a **threshold** value.If the value slides up it then we can say that it is a haar feature that work for evaluation but,of course it is not enough.
 
 - **2.3 Integral Images**
+- This is a trick to get the haar-feature as quickly as possible.
+- Before step into integral images I want to talk about the basic process of haar-feature obtaining.
+- Let's say we have edge haar-like feature on nose of human.Actually this feature is full of pixels.
+- Those pixels have both brighter and darker sides and we think that we work on a gray scale image in accordiance with a Viola-Jones algorithm.
+- First we give values to those pixels as normalized values in range 0 to 1.Then we divide the feature as white and black side.-
+- The next step is to calculate an average value for both side.Let's say we have M pixels on both sides.
+- Then, we get the subtract two value from each other.If this value is greater than the threashold value we determine,then we can say that it is an **haar-like feature**.
+- This is a long and very expensive process since,haar-likle features can be expanded and shrunk.This means in such a small feature we can have tousands of pixels inside.
+- To make the process a bit more simple and we use integral image.**Integral image** has the same size with original image and every pixel value is the sum of all pixels of its above and left.Then subtract some pixels blocks from each other.That means via small size of pixels we use,we can determine whether it is an haar-like feature or not.
 
+- **2.4 Training Classifiers && Cascading**
+- To determine the detection as the first part of the algorithm we need to train our features.To get the most important features we need
+others that complement each other. **F(X)=a1f(x1)+a2f(x2)+...+anf(xn)** ,where F(X) is called **strongest training classifier** and the others called **weak training classifiers**.
+- While evaluating whether it is a part of the human face or not,we need many samples.For instance we detected that it is a nose feature but it is not enough.We need to check many more human faces for training.Plus,we need also False negative and false negative features to be used as weak classifier samples to make the prediction more robust and price as much as possible.
  
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
