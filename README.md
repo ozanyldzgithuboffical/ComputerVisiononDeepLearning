@@ -4,20 +4,20 @@
 - This repo contains the basis of the Computer Vision applied with Deep Learning Models especially with Convolutional Deep Learning (CNN)
 
 ## Contents
-  1. **Computer Vision Overview**
-  2. **Face Detection with Vialo-Jones Algorithm**
-     2.1 **Vialo-Jones Algorithm Overview
-     2.2 **Haar-like Features**
-     2.3 **Integral Images**
-     2.4 **Training Classifiers**
-     2.5 **Cascaeding**
-  3. **Object Detection**
-     3.1 **Single Shot Multibox Detector (SSD)**
-     3.2 **Preceding Object Positions**
-     3.2 **Scale Problem**
-  4. **Generative Adversarial Networks (GANs) Intuition**
-     4.1 **GANs Working Process**
-  5. **Convolutional Neural Network for Computer Vision**
+  - 1. **Computer Vision Overview**
+  - 2. **Face Detection with Vialo-Jones Algorithm**
+    - 2.1 **Vialo-Jones Algorithm Overview
+    - 2.2 **Haar-like Features**
+    - 2.3 **Integral Images**
+    - 2.4 **Training Classifiers**
+    - 2.5 **Cascaeding**
+  - 3. **Object Detection**
+    - 3.1 **Single Shot Multibox Detector (SSD)**
+    - 3.2 **Preceding Object Positions**
+    - 3.2 **Scale Problem**
+  - 4. **Generative Adversarial Networks (GANs) Intuition**
+     - 4.1 **GANs Working Process**
+  - 5. **Convolutional Neural Network for Computer Vision**
   
 ## Computer Vision Overview
 -
