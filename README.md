@@ -1,12 +1,10 @@
 # ComputerVisiononDeepLearning
-
-# DeepLearning
 - This repo contains the basis of the Computer Vision applied with Deep Learning Models especially with Convolutional Deep Learning (CNN)
 
 ## Contents
   - 1. **Computer Vision Overview**
   - 2. **Face Detection with Vialo-Jones Algorithm**
-    - 2.1 **Vialo-Jones Algorithm Overview
+    - 2.1 **Vialo-Jones Algorithm Overview**
     - 2.2 **Haar-like Features**
     - 2.3 **Integral Images**
     - 2.4 **Training Classifiers**
@@ -20,7 +18,26 @@
   - 5. **Convolutional Neural Network for Computer Vision**
   
 ## Computer Vision Overview
--
+- Computer Vision, often abbreviated as CV, is defined as a field of study that seeks to develop techniques to help computers see and understand the content of digital images such as photographs and videos.
+- It is a multidisciplinary field that could broadly be called a subfield of artificial intelligence and machine learning, which may involve the use of specialized methods and make use of general learning algorithms.
+- A given computer vision system may require image processing to be applied to raw input, e.g. pre-processing images.For instance to detect the face,Vialo-Jones algorithm first convert image to gray scale to reduce pixel process.
+
+## 2.Face Detection with Vialo-Jones Algorithm
+- **2.1 Vialo-Jones Algorithm Overview**
+- Vialo and Jones are two scientist that they had developed one of the most powerfull computer vision face detection algorithm in 2001 and it still has this popularity.
+- The algorithm can be used for both images and video frames.However,it shows it best efficiency in frontal face images.
+- The algorihm is consist of two phases **training**,**detection** respectivey.In **training phase** generally,a strongest classifier is tried to be obtained from samples which consist of relevant and irrelevant images.
+- Algorithm uses **Haar-like features** to obtain an **integral image**
+
+- **2.2 Haar-Like Features**
+- Haar is Hungarian mathmetician and he has found the features can be used to detect important features in an image.
+- Basic Haar-like features are **edge,linear,four regtangle haar-like features.
+- In face detection,in order to detect the object as a face we need to determine human's nose,eyes,lip etc.
+- For instance when we convert to RGB frontal face image into a gray scale image.We can see that some parts are bright and some of them is black.For lip of a human we can say that it has a **linear haar-like feature**.
+- We need to make sure that it is a correct haar-feature or not.Because of this,generally we determine a **threshold** value.If the value slides up it then we can say that it is a haar feature that work for evaluation but,of course it is not enough.
+
+- **2.3 Integral Images**
+
  
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
