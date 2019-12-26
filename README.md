@@ -98,6 +98,9 @@ Similarly for other conv layers:
 - It generates objects by **Generation Phase** such as images,videos,3D animations and these objects are assesed by the **discriminator**
 - Its usage fields are Speech Generation,Assisting Artists,Generating Images,Face Ageing.
 
+## **5.Dropout In Keras**
+- Dropout is a technique where randomly selected neurons are ignored during training. They are “dropped-out” randomly. This means that their contribution to the activation of downstream neurons is temporally removed on the forward pass and any weight updates are not applied to the neuron on the backward pass.
+
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
 - **Convolutional Neural Networks (CNN)** will be under **Artificial Intelligence Repo (AI)** 
