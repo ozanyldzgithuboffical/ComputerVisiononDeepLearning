@@ -15,7 +15,6 @@
     - 3.4 **Fast R-CNN**
     - 3.5 **YOLO**
   - 4. **Generative Adversarial Networks (GANs) Intuition**
-     - 4.1 **GANs Working Process**
   - 5. **Convolutional Neural Network for Computer Vision**
   
 ## Computer Vision Overview
@@ -107,6 +106,11 @@ Similarly for other conv layers:
 [Deep Learning Repo](https://github.com/ozanyldzgithuboffical/DeepLearning)
 - **Spring Microservices with Spring Cloud** repo will be also available later. 
 - **Docker** repo will be also available later.
+## **4.Generative Adversarial Networks (GANs) Intuition**
+- It is a neural network that enquires the probability of x as p(x|y).
+- It consists of two steps **Generation** and **Discriminator**.
+- It generates objects by **Generation Phase** such as images,videos,3D animations and these objects are assesed by the **discriminator**
+- Its usage fields are Speech Generation,Assisting Artists,Generating Images,Face Ageing.
 
 ## About the Repo
 - This repo is open-source and aims at giving an overview about the top-latest topics that will lead learning of the basis of deep learning and intelligent systems basis.
