@@ -15,7 +15,7 @@
     - 3.4 **Fast R-CNN**
     - 3.5 **YOLO**
   - 4. **Generative Adversarial Networks (GANs) Intuition**
-  - 5. **Convolutional Neural Network for Computer Vision**
+  - 5. **Dropout Mechanism in CNN for GANS**
   
 ## Computer Vision Overview
 - Computer Vision, often abbreviated as CV, is defined as a field of study that seeks to develop techniques to help computers see and understand the content of digital images such as photographs and videos.
